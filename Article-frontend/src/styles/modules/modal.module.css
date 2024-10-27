@@ -1,0 +1,127 @@
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: var(--bg-2);
+	max-width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 2rem;
+	border-radius: 8px;
+	position: relative;
+	width: 600px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.formTitle {
+	color: var(--black-1);
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.buttonContainer {
+	display: flex;
+	gap: 1rem;
+}
+
+.form {
+	width: 100%;
+}
+
+.form label {
+	font-size: 1.6rem;
+	color: var(--black-1);
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+	margin-bottom: 2rem;
+	width: 100%;
+	padding: 1rem;
+	border: none;
+	background-color: var(--white);
+	font-size: 1.6rem;
+}
+
+.closeButton {
+	position: absolute;
+	top: -10px;
+	right: 0;
+	transform: translateY(-100%);
+	font-size: 2.5rem;
+	padding: 0.5rem;
+	border-radius: 4px;
+	background-color: var(--gray-1);
+	color: var(--black-2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.3s ease all;
+	z-index: 1;
+}
+
+.closeButton:hover {
+	background-color: #e32525;
+	color: white;
+}
+
+
+.textarea {
+	resize: vertical;  /* Prevents resizing left-right, only up-down allowed */
+	padding: 1rem;
+	border: none;
+	background-color: var(--white);
+	font-size: 1.6rem;
+  }
+
+
+  .resultItem {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0;
+	background-color: white;
+	border-radius: 8px;
+	width: 100%;
+	min-width: 500px;
+	border-bottom: 1px solid #ccc; /* Optional: adds a line between results */
+  }
+  
+  .articleId {
+	color: blue; /* Color to indicate clickable text */
+	cursor: pointer; /* Pointer cursor to indicate action */
+	text-decoration: underline; /* Underline to emphasize it is clickable */
+  }
+  
+  .articleScore {
+	color: green; /* Change this to whatever color you prefer */
+	font-weight: bold; /* Make the score stand out */
+  }
+  
+  .row {
+	margin: 5px;
+  }
+
+  
