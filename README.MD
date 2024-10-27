@@ -1,3 +1,18 @@
+---
+
+## Project Structure
+
+- **Article-backend**: Contains backend code, including API and database models.
+- **Article-frontend**: Contains frontend code, including UI and application logic.
+
+---
+
+## Notes
+
+- Ensure that your backend is running before starting the frontend.
+- Verify that all environment variables are properly set up in `.env.dev` for the backend to work as expected.
+
+
 ## Backend Setup (Article-backend)
 
 1. **Navigate to the backend directory:**
@@ -68,21 +83,6 @@
    ```bash
    npm run start
    ```
-
----
-
-## Project Structure
-
-- **Article-backend**: Contains backend code, including API and database models.
-- **Article-frontend**: Contains frontend code, including UI and application logic.
-
----
-
-## Notes
-
-- Ensure that your backend is running before starting the frontend.
-- Verify that all environment variables are properly set up in `.env.dev` for the backend to work as expected.
-
 
 ## Docker Setup
 
