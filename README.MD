@@ -1,3 +1,6 @@
+
+# Project Setup Guide
+
 ---
 
 ## Project Structure
@@ -9,9 +12,10 @@
 
 ## Notes
 
-- Ensure that your backend is running before starting the frontend.
+- Ensure that the backend is running before starting the frontend.
 - Verify that all environment variables are properly set up in `.env.dev` for the backend to work as expected.
 
+---
 
 ## Backend Setup (Article-backend)
 
@@ -81,23 +85,31 @@
 3. **Run the frontend server:**
 
    ```bash
-   npm run start
+   npm start
    ```
+
+---
 
 ## Docker Setup
 
-
 1. **Environment Setup:**
-   - Go to Ariticle-backend directory:
+   - Navigate to the `Article-backend` directory:
    - Copy the sample environment file:
 
      ```bash
      cp .env.sample .env.dev
      ```
+
    - Open `.env.dev` and replace placeholder values (e.g., `SECRET_KEY`, `DATABASE_URL`, etc.) with your actual secret keys and credentials.
+
 2. **Run Docker:**
-   - Go back to root directory
-   - Run the this command:
+   - Return to the root directory:
+
+     ```bash
+     cd ..
+     ```
+
+   - Run Docker Compose with the following command:
 
      ```bash
      docker-compose up --build
