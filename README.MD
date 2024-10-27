@@ -34,7 +34,7 @@
 
 5. **Run the backend server:**
    ```bash
-   python manage.py runserver
+   python main.py
    ```
 
 ---
