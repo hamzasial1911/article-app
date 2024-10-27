@@ -1,0 +1,20 @@
+version: '3.11'
+
+services:
+  backend:
+    build:
+      context: ./Article-backend
+      dockerfile: Dockerfile
+    env_file:
+      - ./Article-backend/.env.dev
+    ports:
+      - "8080:8080"
+    depends_on:
+      - frontend
+
+  frontend:
+    build:
+      context: ./Article-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
